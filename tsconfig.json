@@ -1,0 +1,6 @@
+{
+  "extends": "./node_modules/@azury/style/typescript/tsconfig.json",
+  "include": [
+    "src/**/*.ts"
+  ]
+}
