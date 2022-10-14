@@ -11,14 +11,28 @@ npm i @unvented/translate
 ```jsonc
 // de.json
 {
-  "welcomeMessage": "Hallo {name}"
+  "welcomeMessage": "Hallo {name}",
+  "a": {
+    "very": {
+      "deep": {
+        "translation": "Irgendwas"
+      }
+    }
+  }
 }
 ```
 
 ```jsonc
 // en.json
 {
-  "welcomeMessage": "Hello {name}"
+  "welcomeMessage": "Hello {name}",
+  "a": {
+    "very": {
+      "deep": {
+        "translation": "Something"
+      }
+    }
+  }
 }
 ```
 
@@ -29,11 +43,6 @@ import en from './en.json'
 
 const translate = useTranslate({ de, en }, '<currentLocale>' /* e.g. 'de' */, '<fallbackLocale>' /* e.g. 'en' */)
 
-, translation = translate('welcomeMessage', { name: 'Samuel' }) // Hallo Samuel
-
-export default () => (
-  <Translation.Provider value={{ locale, setLocale }}>
-    <Component />
-  </Translation.Provider>
-)
+, translationOne = translate('welcomeMessage', { name: 'Samuel' }) // Hallo Samuel
+, translationTwo = translate('a.very.deep.translation') // Irgendwas
 ```
