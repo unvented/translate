@@ -1,0 +1,15 @@
+{
+  "welcomeMessage": "Hello {name}",
+  "a": {
+    "very": {
+      "deep": {
+        "translation": "Something"
+      }
+    },
+    "deep": {
+      "fallback": {
+        "translation": "Whatever"
+      }
+    }
+  }
+}

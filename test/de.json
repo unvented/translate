@@ -1,0 +1,10 @@
+{
+  "welcomeMessage": "Hallo {name}",
+  "a": {
+    "very": {
+      "deep": {
+        "translation": "Irgendwas"
+      }
+    }
+  }
+}
