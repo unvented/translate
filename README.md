@@ -27,13 +27,7 @@ import { useTranslate } from '@unvented/translate'
 import de from './de.json'
 import en from './en.json'
 
-const translate = useTranslate({ de, en }, 'de', 'en')
+const translate = useTranslate({ de, en }, '<currentLocale>' /* e.g. 'de' */, '<fallbackLocale>' /* e.g. 'en' */)
 
 , translation = translate('welcomeMessage', { name: 'Samuel' }) // Hallo Samuel
-```
-
-### Structure
-
-```tsc
-declare const useTranslate(locales: { [key: string]: object }, currentLocale: string, fallbackLocale: string)
 ```
