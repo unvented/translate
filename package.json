@@ -20,7 +20,7 @@
   "bugs": "https://github.com/unvented/translate/issues",
   "homepage": "https://github.com/unvented/translate#readme",
   "devDependencies": {
-    "@azury/eslint-config": "^1.0.7",
+    "@azury/eslint-config": "^1.0.10",
     "@azury/style": "^1.0.0",
     "@types/jest": "^29.2.0",
     "@types/node": "^18.11.3",
